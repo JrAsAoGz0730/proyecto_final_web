@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgba(30, 35, 38, 1);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 5%;
+  left: 90%;
+  z-index: 99;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+  list-style: none;
+}
+
+header a {
+  background: #000;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  border: thin solid #fff;
+  border-radius: 20px;
+}
+
+header nav a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  background: crimson;
+}
+
+.banner-1 {
+  margin: 20px;
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 0.8)
+    ),
+    url(/recursos/IMG/colombia.webp);
+}
+
+.banner-2 {
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 0.8)
+    ),
+    url(/recursos/IMG/planeta.webp);
+}
+
+.blog-section {
+  width: 100%;
+}
+
+.blog-section .section-content {
+  width: 85%;
+  margin: 50px auto;
+}
+
+.blog-section .section-content .title {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+.blog-section .section-content .title H2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.blog-section .section-content .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 30px auto;
+}
+
+.blog-section .section-content .cards .card {
+  box-shadow: 2px 4px 10px 4px #000;
+  border-radius: 20px;
+  position: relative;
+  background-color: #8f8f8f;
+  width: 100%;
+}
+
+.blog-section .section-content .cards .card .imagen-section img {
+  border-radius: 20px;
+  height: 300px;
+  width: 100%;
+}
+
+.blog-section .section-content .cards .card .article {
+  padding: 15px 20px;
+}
+
+.blog-section .section-content .cards .card .article h4 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.blog-section .section-content .cards .card .article p {
+  font-size: 16px;
+  margin: 30px 0px;
+  color: whitesmoke;
+}
+
+.blog-section .section-content .cards .card a {
+  text-decoration: none;
+  display: inline-block;
+  background: crimson;
+  padding: 8px 1px;
+  margin-left: 30%;
+  color: #fff;
+  margin-bottom: 20px;
+  border: thin solid #fff;
+  border-radius: 10px;
+}
